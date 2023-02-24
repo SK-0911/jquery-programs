@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.3.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#p1").click(function(){
+    $(this).hide();
+  });
+  $("#p2").dblclick(function(){
+    $(this).hide();
+  });
+  $("#p3").mouseenter(function(){
+    alert("You entered p1!");
+  });
+  $("#p4").mouseleave(function(){
+    alert("Bye Bye");
+  });
+});
+</script>
+</head>
+
+<body>
+<p id="p1">If you click on me, I will disappear.</p><br><br>
+<p id="p2">Click me away!</p><br><br>
+<p id="p3">Click me too!</p><br><br>
+<p id="p4">Click me too!</p>
+</body>
+</html>

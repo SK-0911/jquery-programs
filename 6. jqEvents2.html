@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.3.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "cyan");
+  });
+});
+</script>
+</head>
+<body>
+<h2>Welcome to form events</h2>
+Name: <input type="text" name="fullname"><br><br><br>
+Email: <input type="text" name="email">
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.3.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+      $(this).css("background-color", "yellow");
+    }  
+  });
+});
+</script>
+</head>
+<body>
+<h2>For Demo, Click or move the mouse pointer.</h2><br><br>
+<p>Welcome to NMIMS Navi Mumbai</p>
+
+</body>
+</html>
